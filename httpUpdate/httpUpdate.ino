@@ -2,7 +2,7 @@
  * httpUpdate.ino
  *
  *  Created on: 27.11.2015
- *Neil added some code
+ *test message
  */
 
 #include <Arduino.h>
@@ -40,7 +40,7 @@ void loop() {
     // wait for WiFi connection
     if((WiFiMulti.run() == WL_CONNECTED)) {
 
-        t_httpUpdate_return ret = ESPhttpUpdate.update("http://107.190.105.82/test.bin");
+        t_httpUpdate_return ret = ESPhttpUpdate.update("http://107.190.105.82/nodeupdate");
         //t_httpUpdate_return  ret = ESPhttpUpdate.update("https://server/file.bin");
 
         switch(ret) {
